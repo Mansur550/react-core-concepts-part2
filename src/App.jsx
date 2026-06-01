@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Counter from './Counter'
+import Batsman from './Batsman'
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
   return (
     <>
       <h3>Vite +React</h3>
+      
+      <Batsman></Batsman>
 
       {/* Event handeler */}
       <button onClick={handleClick} >Click Me</button>
