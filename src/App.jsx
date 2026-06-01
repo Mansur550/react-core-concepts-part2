@@ -10,6 +10,15 @@ function handleClick(){
   alert('Button Clicked')
 }
 
+const handleClick2 = () =>{
+  alert('Button Clicked 2')
+}
+
+const handleClick3 = (num) =>{
+  const newNum = num * 2;
+  alert(newNum);
+}
+
 
   return (
     <>
@@ -17,6 +26,8 @@ function handleClick(){
 
     {/* Event handeler */}
     <button onClick={handleClick} >Click Me</button>
+    <button onClick={handleClick2} >Click Me</button>
+    <button onClick={() => handleClick3(10)} >Click Me</button>
 
 
 
