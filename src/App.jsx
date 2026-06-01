@@ -3,31 +3,34 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Counter from './Counter'
 
 function App() {
 
-function handleClick(){
-  alert('Button Clicked')
-}
+  function handleClick() {
+    alert('Button Clicked')
+  }
 
-const handleClick2 = () =>{
-  alert('Button Clicked 2')
-}
+  const handleClick2 = () => {
+    alert('Button Clicked 2')
+  }
 
-const handleClick3 = (num) =>{
-  const newNum = num * 2;
-  alert(newNum);
-}
+  const handleClick3 = (num) => {
+    const newNum = num * 2;
+    alert(newNum);
+  }
 
 
   return (
     <>
-    <h3>Vite +React</h3>
+      <h3>Vite +React</h3>
 
-    {/* Event handeler */}
-    <button onClick={handleClick} >Click Me</button>
-    <button onClick={handleClick2} >Click Me</button>
-    <button onClick={() => handleClick3(10)} >Click Me</button>
+      {/* Event handeler */}
+      <button onClick={handleClick} >Click Me</button>
+      <button onClick={handleClick2} >Click Me</button>
+      <button onClick={() => handleClick3(10)} >Click Me</button>
+      <Counter></Counter>
+
 
 
 
